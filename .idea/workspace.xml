@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd47eec-7696-4de7-80c7-df284ca8857c" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/qa_python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qa_python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
     </list>
@@ -49,7 +43,28 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.pytest for tests.TestBooksCollector.test_set_book_genre_no_book">
+  <component name="RunManager" selected="Python tests.pytest for tests.TestBooksCollector.test_get_book_genre_correct_genre">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="qa_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in bin" type="tests" factoryName="Autodetect" nameIsGenerated="true">
       <module name="qa_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,7 +94,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for tests.TestBooksCollector.test_add_new_book_add_two_books" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.TestBooksCollector.test_get_book_genre_correct_genre" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="qa_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,7 +107,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.TestBooksCollector.test_add_new_book_add_two_books&quot;" />
+      <option name="_new_target" value="&quot;tests.TestBooksCollector.test_get_book_genre_correct_genre&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -110,23 +125,6 @@
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;tests.TestBooksCollector.test_set_book_genre_existing_genre&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for tests.TestBooksCollector.test_set_book_genre_existing_genre_2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="qa_python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="C:\Users\user\PycharmProjects\auto_test\venv\Scripts\python.exe" />
-      <option name="SDK_NAME" value="Python 3.12 (auto_test)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.TestBooksCollector.test_set_book_genre_existing_genre_2&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -165,21 +163,21 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.main" />
       <item itemvalue="Python tests.Python tests in qa_python" />
       <item itemvalue="Python tests.Python tests in bin" />
+      <item itemvalue="Python tests.pytest for tests.TestBooksCollector.test_get_book_genre_correct_genre" />
       <item itemvalue="Python tests.pytest for tests.TestBooksCollector.test_set_book_genre_no_book" />
       <item itemvalue="Python tests.pytest for tests.TestBooksCollector.test_set_book_genre_nonexistent_genre" />
-      <item itemvalue="Python tests.pytest for tests.TestBooksCollector.test_set_book_genre_existing_genre_2" />
       <item itemvalue="Python tests.pytest for tests.TestBooksCollector.test_set_book_genre_existing_genre" />
-      <item itemvalue="Python tests.pytest for tests.TestBooksCollector.test_add_new_book_add_two_books" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for tests.TestBooksCollector.test_get_book_genre_correct_genre" />
         <item itemvalue="Python tests.pytest for tests.TestBooksCollector.test_set_book_genre_no_book" />
         <item itemvalue="Python tests.pytest for tests.TestBooksCollector.test_set_book_genre_nonexistent_genre" />
         <item itemvalue="Python tests.pytest for tests.TestBooksCollector.test_set_book_genre_existing_genre" />
-        <item itemvalue="Python tests.pytest for tests.TestBooksCollector.test_add_new_book_add_two_books" />
-        <item itemvalue="Python tests.pytest for tests.TestBooksCollector.test_set_book_genre_existing_genre_2" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>

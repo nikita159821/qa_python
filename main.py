@@ -10,11 +10,13 @@ class BooksCollector:
     def add_new_book(self, name):
         if not self.books_genre.get(name) and 0 < len(name) < 41:
             self.books_genre[name] = ''
+            return self.books_genre
 
     # устанавливаем книге жанр
     def set_book_genre(self, name, genre):
         if name in self.books_genre and genre in self.genre:
             self.books_genre[name] = genre
+            return self.books_genre
 
     # получаем жанр книги по её имени
     def get_book_genre(self, name):
@@ -58,5 +60,8 @@ class BooksCollector:
 
 
 collector = BooksCollector()
-print(collector.add_new_book('safasfsafasfas'))
+print(collector.add_new_book('Гордость и предубеждение и зомби 2'))
 
+print(collector.set_book_genre('Гордость и предубеждение и зомби 2', 'Фантастика'))
+
+print(collector.get_book_genre('Гордость и предубеждение и зомби 2'))
