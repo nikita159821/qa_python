@@ -195,32 +195,29 @@ class TestBooksCollector:
         # Проверяем, что ничего не выведено
         assert actual_result == []
 
+    @pytest.mark.parametrize('name', ['Гордость и предубеждение и зомби 2'])
     # 9 тест. Добавляем товар в избранное
-    def test_add_book_in_favorites_success(self):
+    def test_add_book_in_favorites_success(self,name):
         collector = BooksCollector()
-
-        favorites = 'Гордость и предубеждение и зомби 2'
-
-        # добавляем книгу
-        collector.add_new_book(favorites)
-        # добавляем книгу в избранное
-        collector.add_book_in_favorites(favorites)
-
-        # это просто для себя, дебаг :))
-        print(favorites)
-
-        # проверяем, что книга добавилась в избранное
-        assert 'Гордость и предубеждение и зомби 2' in collector.favorites
-
-    # 10 тест. Удаляем книгу из избранного
-    def test_delete_book_from_favorites_success(self):
-        collector = BooksCollector()
-
-        name = 'Гордость и предубеждение и зомби 2'
 
         # добавляем книгу
         collector.add_new_book(name)
+        # добавляем книгу в избранное
+        collector.add_book_in_favorites(name)
 
+        # это просто для себя, дебаг :))
+        print(collector.favorites)
+
+        # проверяем, что книга добавилась в избранное
+        assert name in collector.favorites
+
+    @pytest.mark.parametrize('name', ['Гордость и предубеждение и зомби 2'])
+    # 10 тест. Удаляем книгу из избранного
+    def test_delete_book_from_favorites_success(self,name):
+        collector = BooksCollector()
+
+        # добавляем книгу
+        collector.add_new_book(name)
         # добавляем книгу в избранное
         collector.add_book_in_favorites(name)
 
@@ -230,24 +227,23 @@ class TestBooksCollector:
         # это просто для себя, дебаг :))
         print(collector.favorites)
 
-        assert 'Гордость и предубеждение и зомби 2' not in collector.favorites
+        assert name not in collector.favorites
 
+    @pytest.mark.parametrize('name', ['Гордость и предубеждение и зомби 2'])
     # 11 тест. Получаем список Избранных книг
-    def test_get_list_of_favorites_books_success(self):
+    def test_get_list_of_favorites_books_success(self,name):
         collector = BooksCollector()
 
-        book_name = 'Гордость и предубеждение и зомби 2'
-
         # добавляем книгу
-        collector.add_new_book(book_name)
+        collector.add_new_book(name)
         # добавляем книгу в избранное
-        collector.add_book_in_favorites(book_name)
+        collector.add_book_in_favorites(name)
 
         # получаем список избранных книг
         favorites_list = collector.get_list_of_favorites_books()
 
         # это просто для себя, дебаг :))
-        print(favorites_list)
+        print(collector.favorites)
 
         # проверяем, что книга добавилась в избранное
-        assert book_name in favorites_list
+        assert name in favorites_list
