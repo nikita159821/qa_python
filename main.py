@@ -62,6 +62,4 @@ class BooksCollector:
 collector = BooksCollector()
 print(collector.add_new_book('Гордость и предубеждение и зомби 2'))
 
-print(collector.set_book_genre('Гордость и предубеждение и зомби 2', 'Фантастика'))
-
-print(collector.get_book_genre('Гордость и предубеждение и зомби 2'))
+print(collector.add_book_in_favorites('Гордость и предубеждение и зомби 2'))
